@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +23,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybB-5t-5xl">
+                                <rect key="frame" x="268" y="607" width="99" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="1" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83i-hN-s81">
+                                <rect key="frame" x="56" y="202" width="263" height="263"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-jg-y67">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="126.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="29"/>
+                                        <state key="normal" title="normal" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC4-cL-5pb">
+                                        <rect key="frame" x="137" y="0.0" width="126" height="126"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="3" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZp-wb-5b4">
+                                        <rect key="frame" x="0.0" y="137" width="126" height="126"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="5" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-Ds-SGr">
+                                        <rect key="frame" x="137" y="137" width="126" height="126"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="15" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TC4-cL-5pb" secondAttribute="trailing" id="6yz-Pb-gB8"/>
+                                    <constraint firstAttribute="bottom" secondItem="gAm-Ds-SGr" secondAttribute="bottom" id="7iO-k3-C38"/>
+                                    <constraint firstItem="TC4-cL-5pb" firstAttribute="width" secondItem="83i-hN-s81" secondAttribute="width" multiplier="0.48" id="E2H-oU-iZh"/>
+                                    <constraint firstItem="bmT-jg-y67" firstAttribute="leading" secondItem="83i-hN-s81" secondAttribute="leading" id="ERC-k3-bgt"/>
+                                    <constraint firstItem="bmT-jg-y67" firstAttribute="width" secondItem="83i-hN-s81" secondAttribute="width" multiplier="0.48" id="GNp-9P-Xbc"/>
+                                    <constraint firstItem="rZp-wb-5b4" firstAttribute="leading" secondItem="83i-hN-s81" secondAttribute="leading" id="ILw-VZ-IbD"/>
+                                    <constraint firstItem="bmT-jg-y67" firstAttribute="height" secondItem="83i-hN-s81" secondAttribute="height" multiplier="0.48" id="Izc-ES-KWv"/>
+                                    <constraint firstAttribute="trailing" secondItem="gAm-Ds-SGr" secondAttribute="trailing" id="J9c-qR-SGp"/>
+                                    <constraint firstItem="TC4-cL-5pb" firstAttribute="height" secondItem="83i-hN-s81" secondAttribute="height" multiplier="0.48" id="Xym-Sz-G2M"/>
+                                    <constraint firstItem="gAm-Ds-SGr" firstAttribute="height" secondItem="83i-hN-s81" secondAttribute="height" multiplier="0.48" id="Yul-gi-H9A"/>
+                                    <constraint firstAttribute="bottom" secondItem="rZp-wb-5b4" secondAttribute="bottom" id="pVK-py-MNi"/>
+                                    <constraint firstAttribute="width" secondItem="83i-hN-s81" secondAttribute="height" multiplier="1:1" id="qRJ-zr-rdA"/>
+                                    <constraint firstItem="rZp-wb-5b4" firstAttribute="width" secondItem="83i-hN-s81" secondAttribute="width" multiplier="0.48" id="rAL-Gc-Gdo"/>
+                                    <constraint firstItem="gAm-Ds-SGr" firstAttribute="width" secondItem="83i-hN-s81" secondAttribute="width" multiplier="0.48" id="rVa-zh-j1Z"/>
+                                    <constraint firstItem="rZp-wb-5b4" firstAttribute="height" secondItem="83i-hN-s81" secondAttribute="height" multiplier="0.48" id="vL9-vy-z0z"/>
+                                    <constraint firstItem="TC4-cL-5pb" firstAttribute="top" secondItem="83i-hN-s81" secondAttribute="top" id="xLk-rY-Ff0"/>
+                                    <constraint firstItem="bmT-jg-y67" firstAttribute="top" secondItem="83i-hN-s81" secondAttribute="top" id="xqT-Vw-qDu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ybB-5t-5xl" secondAttribute="trailingMargin" id="91u-n2-9sY"/>
+                            <constraint firstItem="83i-hN-s81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Vbb-zP-hZj"/>
+                            <constraint firstItem="83i-hN-s81" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kH5-Ua-k5y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ybB-5t-5xl" secondAttribute="bottom" constant="20" id="kbK-HI-8Xr"/>
+                            <constraint firstItem="83i-hN-s81" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xob-C9-4fc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+    </resources>
 </document>
