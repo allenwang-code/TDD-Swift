@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DD0E655F1E97318D001036F5 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E655E1E97318D001036F5 /* BrainTests.swift */; };
 		DD0E65611E973255001036F5 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E65601E973255001036F5 /* Brain.swift */; };
+		DD0E65631E978232001036F5 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E65621E978232001036F5 /* ViewControllerUnitTests.swift */; };
+		DD0E65651E978E32001036F5 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E65641E978E32001036F5 /* GameTests.swift */; };
+		DD0E65671E978E74001036F5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E65661E978E74001036F5 /* Game.swift */; };
 		DD92B1A21E94EB49008E4F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92B1A11E94EB49008E4F8E /* AppDelegate.swift */; };
 		DD92B1A41E94EB49008E4F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92B1A31E94EB49008E4F8E /* ViewController.swift */; };
 		DD92B1A71E94EB49008E4F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD92B1A51E94EB49008E4F8E /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 		DD0E655D1E97318D001036F5 /* FizzBuzzTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FizzBuzzTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD0E655E1E97318D001036F5 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		DD0E65601E973255001036F5 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		DD0E65621E978232001036F5 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		DD0E65641E978E32001036F5 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		DD0E65661E978E74001036F5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		DD92B19E1E94EB48008E4F8E /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD92B1A11E94EB49008E4F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD92B1A31E94EB49008E4F8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				DD92B1AA1E94EB49008E4F8E /* LaunchScreen.storyboard */,
 				DD92B1AD1E94EB49008E4F8E /* Info.plist */,
 				DD0E65601E973255001036F5 /* Brain.swift */,
+				DD0E65661E978E74001036F5 /* Game.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 				DD92B1B81E94EB49008E4F8E /* Info.plist */,
 				DD0E655E1E97318D001036F5 /* BrainTests.swift */,
 				DD0E655D1E97318D001036F5 /* FizzBuzzTests-Bridging-Header.h */,
+				DD0E65621E978232001036F5 /* ViewControllerUnitTests.swift */,
+				DD0E65641E978E32001036F5 /* GameTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				DD92B1A41E94EB49008E4F8E /* ViewController.swift in Sources */,
 				DD0E65611E973255001036F5 /* Brain.swift in Sources */,
 				DD92B1A21E94EB49008E4F8E /* AppDelegate.swift in Sources */,
+				DD0E65671E978E74001036F5 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0E65631E978232001036F5 /* ViewControllerUnitTests.swift in Sources */,
+				DD0E65651E978E32001036F5 /* GameTests.swift in Sources */,
 				DD0E655F1E97318D001036F5 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
